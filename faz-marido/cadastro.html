@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Profissional - Faz Marido</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🔧 Faz Marido</h1>
+            <nav>
+                <a href="index.html">Início</a>
+                <a href="profissionais.html">Profissionais</a>
+                <a href="cadastro.html">Seja um Profissional</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="cadastro">
+        <div class="container">
+            <h2>Cadastre-se como Profissional</h2>
+            <p class="subtitulo">Receba solicitações de clientes na sua região</p>
+            
+            <form id="formCadastro">
+                <label>Nome Completo *</label>
+                <input type="text" name="nome" required>
+
+                <label>WhatsApp *</label>
+                <input type="tel" name="whatsapp" placeholder="(24) 99999-9999" required>
+
+                <label>Serviços que oferece *</label>
+                <select name="servicos" multiple size="6" required>
+                    <option value="eletrica">Elétrica</option>
+                    <option value="hidraulica">Hidráulica</option>
+                    <option value="marcenaria">Marcenaria</option>
+                    <option value="pintura">Pintura</option>
+                    <option value="montagem">Montagem de Móveis</option>
+                    <option value="reparos">Reparos Gerais</option>
+                </select>
+                <small>Segure Ctrl para selecionar vários</small>
+
+                <label>Cidade *</label>
+                <input type="text" name="cidade" value="Três Rios" required>
+
+                <label>Raio de Atendimento (km) *</label>
+                <input type="number" name="raio" value="25" required>
+
+                <label>Breve Descrição</label>
+                <textarea name="descricao" rows="4" placeholder="Conte sobre sua experiência..."></textarea>
+
+                <button type="submit" class="btn">Enviar Cadastro</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Faz Marido - Três Rios, RJ</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
